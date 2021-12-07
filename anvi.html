@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+    <style>
+        div.lazy {
+        width: 700px; 
+        height: 467px; 
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <div class="lazy" data-loader="source"></div>
+    <div class="lazy" data-loader="source"></div>
+    <div class="lazy" data-loader="source"></div>
+    <div class="lazy" data-loader="source"></div>
+    <div class="lazy" data-loader="source"></div>
+    <div class="lazy" data-loader="source"></div>
+    <div class="lazy" data-loader="source"></div>
+    <div class="lazy" data-loader="source"></div>
+    <div class="lazy" data-loader="source"></div>
+    <div class="lazy" data-loader="source"></div>
+    <script type="text/javascript">
+        $(function() {
+        $('.lazy').Lazy({
+            source: function(element){
+                element.html('Element loded');
+            }
+        });
+    });
+    </script>
+</body>
+</html>

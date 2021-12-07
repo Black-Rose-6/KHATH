@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-color: #f3f3f3;
+}
+
+.wrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+}
+
+.wrapper .left{
+  background: #b9b9b9;
+  padding: 30px 25px;
+  border-top-left-radius: 5px;
+  display: grid;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+  grid-template-rows: 0.45fr 1fr;
+}
+
+.wrapper .left .button div{
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.wrapper .left .button div:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.wrapper .right{
+  background: #fff;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wrapper .right .info{
+  margin-bottom: 25px;
+  display: grid;
+  height: 100%;
+  grid-template-rows: 0.1fr 0.31fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
+}
+
+.wrapper .right .info h3{
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapper .right .info .data_info{
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+}
+
+.wrapper .right .account{
+  margin-bottom: 25px;
+  display: none;
+  height: 100%;
+  grid-template-rows: 0.1fr 0.31fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
+}
+
+.wrapper .right .account h3{
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapper .right .account .data_account{
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  grid-template-columns: 0.2fr 1fr;
+}
+
+.wrapper .right .security{
+  margin-bottom: 25px;
+  display: none;
+  height: 100%;
+  grid-template-rows: 0.1fr 0.31fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
+}
+
+.wrapper .right .security h3{
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapper .right .security .data_security{
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  grid-template-columns: 0.2fr 1fr;
+}
+
+.wrapper .right .notification{
+  margin-bottom: 25px;
+  display: none;
+  height: 100%;
+  grid-template-rows: 0.1fr 0.31fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
+}
+
+.wrapper .right .notification h3{
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapper .right .notification .data_notification{
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  grid-template-columns: 0.2fr 1fr;
+}
+
+.wrapper .right .accessibility{
+  margin-bottom: 25px;
+  display: none;
+  height: 100%;
+  grid-template-rows: 0.1fr 0.31fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
+}
+
+.wrapper .right .accessibility h3{
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapper .right .accessibility .data_accessibility{
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  grid-template-columns: 0.2fr 1fr;
+}
+
+.tabactive{
+  background-color: #555555;
+  color: white; 
+}
